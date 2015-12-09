@@ -8,7 +8,7 @@ namespace Knowit_julekalender
 {
     public class Luke2
     {
-        public float Antall()
+        public float HentLøsning()
         {
             var fileContent = File.ReadAllLines("Luke2.txt");
 

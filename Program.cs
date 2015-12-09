@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Knowit_julekalender
 {
@@ -6,9 +7,19 @@ namespace Knowit_julekalender
     {
         static void Main()
         {
-            Console.WriteLine("Luke 1: {0}",new Luke1().Antall());
-            Console.WriteLine("Luke 2: {0}",new Luke2().Antall());
-            Console.WriteLine("Luke 3: {0}",new Luke3().Antall());
+            var løsninger = new List<Func<object>>
+            {
+                () => new Luke1().HentLøsning(),
+                () => new Luke2().HentLøsning(),
+                () => new Luke3().HentLøsning(),
+                () => new Luke4().HentLøsning(),
+            };
+
+            Console.WriteLine("Angi luke (1 - 24)");
+            
+            var luke = int.Parse(Console.ReadLine()?? string.Empty);
+            var løsning = løsninger[luke - 1].Invoke();
+            Console.WriteLine("Luke {0}: {1}",luke, løsning);
 
             Console.Read();
         }

@@ -2,7 +2,7 @@ namespace Knowit_julekalender
 {
     public class Luke3
     {
-        public int Antall()
+        public int HentLøsning()
         {
             var currentWeekDay = 5;
             var result = 0;
