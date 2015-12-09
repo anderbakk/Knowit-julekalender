@@ -46,6 +46,7 @@
     <Compile Include="Luke3.cs" />
     <Compile Include="Luke4.cs" />
     <Compile Include="Luke5.cs" />
+    <Compile Include="Luke6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
