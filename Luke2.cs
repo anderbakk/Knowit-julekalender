@@ -10,7 +10,7 @@ namespace Knowit_julekalender
     {
         public float HentLøsning()
         {
-            var fileContent = File.ReadAllLines("Luke2.txt");
+            var fileContent = File.ReadAllLines("Filer\\Luke2.txt");
 
             var maxEarning = 0f;
             for (var i = 0; i < fileContent.Length - 1; i++)

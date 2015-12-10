@@ -8,7 +8,7 @@ namespace Knowit_julekalender
     {
         public int HentLøsning()
         {
-            var words = File.ReadAllLines("Luke5.txt");
+            var words = File.ReadAllLines("Filer\\Luke5.txt");
 
             var list = words.Select(word => new String(word.OrderBy(c => c).ToArray())).ToList();
             var grouped = list.GroupBy(x => x);
