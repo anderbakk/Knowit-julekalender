@@ -19,6 +19,7 @@ namespace Knowit_julekalender
                 () => new Luke8().HentLøsning(),
                 () => new Luke9().HentLøsning(),
                 () => new Luke10().HentLøsning(),
+                () => new Luke11().HentLøsning(),
             };
 
             Console.WriteLine("Angi luke (1 - 24)");
