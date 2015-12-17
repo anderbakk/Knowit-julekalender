@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Knowit_julekalender
 {
@@ -58,3 +60,4 @@ namespace Knowit_julekalender
         }
     }
 }
+
